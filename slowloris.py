@@ -163,7 +163,7 @@ def init_socket(ip):
 
     s.connect((ip, args.port))
 
-    s.send_line(f"GET /?{random.randint(0, 2000)} HTTP/1.1")
+    s.send_line(f"GET /glonass/sostavOG/sostavOG_calc.php?lang=ru&sort=plane HTTP/1.1")
 
     ua = user_agents[0]
     if args.randuseragent:
